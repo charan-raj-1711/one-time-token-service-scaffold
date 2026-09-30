@@ -36,8 +36,7 @@ export async function issueToken(payload, ttlSeconds) {
     keyFor(tokenId),
     value,
     "EX",
-    ttlSeconds,
-    "NX"
+    ttlSeconds
   );
 
   return tokenId;
